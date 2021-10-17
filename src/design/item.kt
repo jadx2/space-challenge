@@ -1,3 +1,3 @@
 package design
 
-class Item(name: String, weight: Int)
+data class Item(var name: String, var weight: Int)
