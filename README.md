@@ -1,2 +1,0 @@
-# space-challenge
-Space Challenge
