@@ -12,10 +12,3 @@ abstract class Rocket : Spaceship {
     abstract override fun canCarry(item: Item): Boolean
     abstract override fun carry(item: Item): Int
 }
-
-interface Spaceship {
-    fun launch(): Boolean
-    fun land(): Boolean
-    fun canCarry(item: Item ) : Boolean
-    fun carry(item: Item) : Int
-}
