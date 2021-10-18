@@ -1,6 +1,6 @@
 package design
 
-abstract class Rocket : Spaceship {
+abstract class Rocket: Spaceship {
     abstract val cost: Int
     abstract val weight: Int
     abstract var currentCargo: Int

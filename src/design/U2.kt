@@ -1,6 +1,6 @@
 package design
 
-class U2(private val launchSuccess: Int, private val landSuccess: Int) : Rocket() {
+class U2(private val launchSuccess: Int, private val landSuccess: Int): Rocket() {
     override val cost = 120000000
     override val weight = 18000
     override var currentCargo = 0
