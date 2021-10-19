@@ -9,6 +9,8 @@ abstract class Rocket: Spaceship {
     abstract val chanceToExplodeOnLand: Double
     override fun launch(): Boolean = true
     override fun land(): Boolean = true
-    override fun canCarry(item: Item): Boolean = item.weight + currentCargo < cargoLimit
-    override fun carry(item: Item): Int = currentCargo + item.weight
+    override fun canCarry(item: Item): Boolean = item.weight + currentCargo <= cargoLimit
+    override fun carry(item: Item): Int {
+        return this.currentCargo.plus(item.weight).also { this.currentCargo = it }
+    }
 }
