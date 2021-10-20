@@ -51,7 +51,7 @@ class Simulation {
   }
 
   fun runSimulation(rockets: ArrayList<Rocket>): Int {
-    var rocketCost = rockets[0].cost
+    val rocketCost = rockets[0].cost
     var failed = 0
     var budget = 0
 
