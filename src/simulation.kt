@@ -5,14 +5,6 @@ import design.U2
 import java.io.File
 import java.io.InputStream
 
-fun main() {
-  val newSimulation = Simulation()
-  val phase1Items = newSimulation.loadItems("src/data/p1Data.txt")
-  val u1Rockets = newSimulation.loadU1(phase1Items)
-  newSimulation.runSimulation(u1Rockets)
-
-}
-
 class Simulation {
   fun loadItems(file: String): ArrayList<Item> {
     val items = arrayListOf<Item>()
@@ -77,8 +69,6 @@ class Simulation {
     }
 
     budget = rocketCost * (rockets.size + failed)
-
-    print(budget)
     return budget
   }
 }
